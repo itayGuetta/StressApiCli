@@ -40,7 +40,9 @@ Create CLI tool to simulate stress on our Reputation service using
 ```
 python3 stress_cli.py --config_file api_config.ini --threads 10  --domains 5000  --domain_list_file_path domains_url.txt  --timeout 10 
 ```
-
+Extra Args: 
+Log_file - To add log life please add --log_file parmarter 
+Debug Mode - This argument ( --debug_mode )  will trigger logger level to debug mode and print to console important data ( also if enabled , will also save to log file ) 
 
 ## Help
 
