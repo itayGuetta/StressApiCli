@@ -40,9 +40,31 @@ Create CLI tool to simulate stress on our Reputation service using
 ```
 python3 stress_cli.py --config_file api_config.ini --threads 10  --domains 5000  --domain_list_file_path domains_url.txt  --timeout 10 
 ```
-Extra Args: 
-Log_file - To add log life please add --log_file parmarter 
-Debug Mode - This argument ( --debug_mode )  will trigger logger level to debug mode and print to console important data ( also if enabled , will also save to log file ) 
+* Consol Example Output : 
+
+```
+URL is valid and exists on the internet
+Read Data from Config file Successfully !
+Starting test with the following params config file path: api_config.inidomain list file: domains_url.txt threads amount:2 timeout:10 
+Total Active threads are 3
+Reason: timeout/ KeyboardInterrupt
+Total in Time 11 seconds
+Avg time for one request 0.40965858 ms
+Requests in Total - 50
+Error Rate is - 0%
+Max Time for one Request 0.436576
+Min Time for one Request 0.383879
+All threads successfully closed
+```
+
+
+
+
+Extra Args Examples: 
+
+1. Log_file - To add log life please add --log_file parmarter 
+
+2. Debug Mode - This argument ( --debug_mode )  will trigger logger level to debug mode and print to console important data ( also if enabled , will also save to log file ) 
 
 ## Help
 
